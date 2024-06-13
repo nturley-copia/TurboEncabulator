@@ -2,6 +2,8 @@
 -id = TurboEncabulatorSafetyCheck
 -job = verif
 -job.backend = nusmv
+-job.reporters.0 = summary
+-job.reporters.1 = html
 -job.req = pattern
 -job.req.pattern_id = pattern-invariant
 -job.req.pattern_params.1 = "instance.HeadChopper = false"
