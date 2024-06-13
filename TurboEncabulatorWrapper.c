@@ -5,6 +5,7 @@ struct TurboEncabulatorInstance {
     bool EncabulatorEnergized;
     int MegnetoReluctance;
     int SinusoidalRepleneration;
+    
     // locals
     bool _;
     bool __;
@@ -14,6 +15,7 @@ struct TurboEncabulatorInstance {
     int _______;
     int ________;
     int _________;
+
     // outputs
     int FluxPower;
     bool HeadChopper;
