@@ -1,0 +1,12 @@
+-description = "For safety reasons, it's extremely critical that the turbo encabulator head chopper is never activated under any circumstances. We added this check after ''The Beer-Thirty Incident'' and a six step incident retrospective identified that a contributing factor was our ''extremely lax'' attitude toward safety, but realistically, the ambifacient lunar waneshaft is supposed to prevent side fumbling, so it's probably fine, this check is just to make extra sure to reduce workers comp claims."
+-id = TurboEncabulatorSafetyCheck
+-job = verif
+-job.backend = nusmv
+-job.req = pattern
+-job.req.pattern_id = pattern-invariant
+-job.req.pattern_params.1 = "instance.HeadChopper = false"
+-lf = step7
+-lf.entry = TurboEncabulator
+-name = "TurboEncabulator Head Chopper Safety Check"
+-sourcefiles.0 = TurboEncabulator.scl
+
