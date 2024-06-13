@@ -4,7 +4,7 @@ version: '3'
 tasks:
   default:
     cmds:
-      - ./plc.exe -c TurboEncabulator.scl -o build/TurboEncabulator.o
+      - plc -c TurboEncabulator.scl -o build/TurboEncabulator.o
       - clang -c TurboEncabulatorWrapper.c -o build/TurboEncabulatorWrapper.o
       - clang build/TurboEncabulatorWrapper.o build/TurboEncabulator.o -shared -fPIC -o build/TurboEncabulator.dll
   test:

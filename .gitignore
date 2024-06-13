@@ -2,3 +2,4 @@
 output
 src-gen
 build
+.pytest_cache
